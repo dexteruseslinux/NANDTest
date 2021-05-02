@@ -1,0 +1,43 @@
+set PREVIEW_MODE "NANDTest\nby dexteruseslinux\n \nCredits:\nihaveamac/ihaveahax"
+set GM9OUT "0:/gm9/out"
+if	not find $[GM9OUT] NULL
+	mkdir $[GM9OUT]
+end
+
+#####################Main Menu####################
+@Start
+set PREVIEW_MODE "NANDTest\nby dexteruseslinux\nCredits:\nihaveamac/ihaveahax\dok3"
+
+if	not ask "Create 5 SysNAND backups in $[GM9OUT]?\n \nPlease make sure you have\nenough storage space."
+	goto MainMenu_Exit
+end
+
+if	cp -h S:/nand_minsize.bin $[GM9OUT]/nand1.bin
+	echo "Backup created successfully:\n$[GM9OUT]/nand1.bin"
+else
+	echo "Backup failed."
+end
+if	cp -h S:/nand_minsize.bin $[GM9OUT]/nand2.bin
+	echo "Backup created successfully:\n$[GM9OUT]/nand2.bin"
+else
+	echo "Backup failed."
+end
+if	cp -h S:/nand_minsize.bin $[GM9OUT]/nand3.bin
+	echo "Backup created successfully:\n$[GM9OUT]/nand3.bin"
+else
+	echo "Backup failed."
+end
+if	cp -h S:/nand_minsize.bin $[GM9OUT]/nand4.bin
+	echo "Backup created successfully:\n$[GM9OUT]/nand4.bin"
+else
+	echo "Backup failed."
+end
+if	cp -h S:/nand_minsize.bin $[GM9OUT]/nand5.bin
+	echo "Backup created successfully:\n$[GM9OUT]/nand5.bin"
+else
+	echo "Backup failed."
+end
+
+#######################Wakas######################
+
+@MainMenu_Exit
