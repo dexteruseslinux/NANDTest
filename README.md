@@ -7,3 +7,5 @@ Press the HOME Button in Godmode9, then select Scripts, and then NANDTest.
 Press A to start it.
 After you're done backing up those, compare the SHA256 files against eachother. If they're all the same, your NAND is good!
 If they're different, then your NAND may be dying.
+# Credits
+Thanks to dok3 and ihaveahax/ihaveamac!
