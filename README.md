@@ -9,3 +9,6 @@ After you're done backing up those, compare the SHA256 files against eachother. 
 If they're different, then your NAND may be dying.
 # Credits
 Thanks to dok3 and ihaveahax/ihaveamac!
+# How to contribute code to this project
+The code MUST be related to NAND testing!
+Anyway, just ask me on Discord (dexteruseslinux#8570) to add it, I'll credit you too in the Credits.
